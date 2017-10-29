@@ -14,4 +14,5 @@ export class FlotComponent implements OnInit {
     $(FlotCharts);
   }
 
+
 }
