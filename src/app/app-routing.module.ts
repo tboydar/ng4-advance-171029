@@ -11,6 +11,10 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'cards', component: CardsComponent },
   { path: 'cards/:type', component: CardsComponent },
+  {
+    path: 'charts',
+    loadChildren: './charts/charts.module#ChartsModule'
+  },
   fallbackRoute
 ];
 
