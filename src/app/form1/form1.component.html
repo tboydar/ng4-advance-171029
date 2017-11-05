@@ -17,7 +17,7 @@
             <div class="card-body">
                 <form method="get" (ngSubmit)="doSubmit(form)" #form="ngForm" class="form-horizontal">
                     <fieldset>
-                        <div class="form-group" [class.has-error]="mTitle[errors]?.required && mSubtitle.dirty">
+                        <div class="form-group" [class.has-error]="mTitle['errors']?.required && mSubtitle.dirty">
                             <label class="col-sm-2 control-label">Title</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control rounded" required name="title" #mTitle="ngModel" [(ngModel)]="data.title" pattern="\[.*\] .+">
@@ -44,6 +44,18 @@
                         </div>
                     </fieldset>
                     <input type="submit" value="送出表單">
+                      <button type="button" (click)="emails.push('')">新增email</button>
+
+
+                    <fieldset *ngFor="let email of emails; let i = index">
+                      <div class="form-group">
+                          <label class="col-sm-2 control-label">Email</label>
+                          <div class="col-sm-10">
+                              <input type="text" name="email" class="form-control rounded">
+                          </div>
+                      </div>
+                  </fieldset>
+
                     <fieldset>
                         <div class="form-group">
                             <label for="input-id-1" class="col-sm-2 control-label">Label focus</label>
@@ -52,6 +64,7 @@
                             </div>
                         </div>
                     </fieldset>
+
                     <fieldset>
                         <div class="form-group">
                             <label class="col-sm-2 control-label">Password</label>

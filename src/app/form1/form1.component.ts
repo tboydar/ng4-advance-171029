@@ -9,10 +9,13 @@ import { NgForm } from '@angular/forms';
 export class Form1Component implements OnInit {
   data: any = {
     title: 'hello',
-    subtitle: 'angular'
+    subtitle: 'angular',
+    email: []
   };
 
-  doSubmit(form:NgForm) {
+  emails = ['a@gmail.com', 'b@email.com'];
+
+  doSubmit(form: NgForm) {
     console.log('doSubmit');
     console.log(form);
 
