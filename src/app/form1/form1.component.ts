@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form1.component.css']
 })
 export class Form1Component implements OnInit {
-
+  data: any = {};
   constructor() { }
 
   ngOnInit() {
