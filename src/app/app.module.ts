@@ -8,6 +8,9 @@ import { CardsComponent } from './cards/cards.component';
 import { FlotComponent } from './charts/flot/flot.component';
 import { LoginComponent } from './login/login.component';
 import { LayoutComponent } from './layout/layout.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Form1Component } from './form1/form1.component';
+import { Form2Component } from './form2/form2.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +18,13 @@ import { LayoutComponent } from './layout/layout.component';
     DashboardComponent,
     CardsComponent,
     LoginComponent,
-    LayoutComponent
+    LayoutComponent,
+    Form1Component,
+    Form2Component
   ],
   imports: [
     BrowserModule,
+    FormsModule, ReactiveFormsModule,
     AppRoutingModule
   ],
   providers: [],
