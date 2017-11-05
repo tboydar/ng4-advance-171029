@@ -11,6 +11,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Form1Component } from './form1/form1.component';
 import { Form2Component } from './form2/form2.component';
+import { BlockComponent } from './block/block.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Form2Component } from './form2/form2.component';
     LoginComponent,
     LayoutComponent,
     Form1Component,
-    Form2Component
+    Form2Component,
+    BlockComponent
   ],
   imports: [
     BrowserModule,
